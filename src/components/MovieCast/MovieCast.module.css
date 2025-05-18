@@ -1,3 +1,32 @@
 .container {
-  /* styles for MovieCast */
+}
+.actorImage {
+  width: 300px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(4, 49, 49);
+}
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(4, 49, 49);
+}
+.character {
+  font-size: 16px;
+  color: #666;
+}
+.characterName {
+  font-size: 16px;
+  color: #666;
+}
+.castItem {
+  margin-bottom: 20px;
 }

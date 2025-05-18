@@ -1,0 +1,53 @@
+.container {
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(5, 66, 66, 0.329);
+}
+.backLink {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: rgb(4, 49, 49);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  color: rgb(70, 87, 87);
+}
+.loading,
+.error {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  padding-left: 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+.link {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.link:hover {
+  background-color: #f1f1f1;
+  color: rgb(70, 87, 87);
+}
+
+.active {
+  background-color: rgb(70, 87, 87);
+  color: #fff;
+  font-weight: bold;
+}
