@@ -1,0 +1,25 @@
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.img {
+  width: 300px;
+  height: auto;
+}
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.movieLink {
+  text-decoration: none;
+  color: rgb(4, 49, 49);
+}
+.movieTitle {
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+}

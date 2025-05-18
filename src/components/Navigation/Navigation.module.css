@@ -1,3 +1,20 @@
 .container {
-  /* styles for Navigation */
+  background-color: rgb(5, 66, 66);
+  box-shadow: inset 0px 0px 0px 1px rgb(5, 66, 66),
+    inset 0px -1px 0px 1px rgb(5, 66, 66);
+
+  width: 100%;
+  display: flex;
+}
+.link {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: beige;
+  text-decoration: none;
+}
+.active {
+  color: rgb(252, 197, 16);
 }

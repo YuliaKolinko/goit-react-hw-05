@@ -1,0 +1,12 @@
+.container {
+  background-color: rgba(5, 66, 66, 0.329);
+}
+.description {
+  font-size: 28px;
+  font-weight: 600;
+
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: rgb(4, 49, 49);
+  margin-bottom: 30px;
+}
