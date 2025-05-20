@@ -27,6 +27,17 @@ p {
 .spacing {
   margin-bottom: 24px;
 }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(5, 66, 66, 0.329);
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 @keyframes logo-spin {
   from {

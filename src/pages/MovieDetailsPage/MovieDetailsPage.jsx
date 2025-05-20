@@ -1,6 +1,6 @@
 import styles from "./MovieDetailsPage.module.css";
 import MovieDetails from "../../components/MovieDetails/MovieDetails";
-
+import { BeatLoader } from "react-spinners";
 import { useEffect, useState } from "react";
 import {
   useParams,
@@ -32,7 +32,11 @@ export default function MovieDetailsPage() {
       <Link to={location.state?.from || "/"} className={styles.backLink}>
         ← Go back
       </Link>
-      {loading && <p className={styles.loading}>Loading...</p>}
+      {loading && (
+        <div className={styles.loaderWrapper}>
+          <BeatLoader color="#043131" />
+        </div>
+      )}
       {error && (
         <p className={styles.error}>Something went wrong: {error.message}</p>
       )}

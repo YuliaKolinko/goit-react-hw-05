@@ -1,0 +1,15 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.container {
+  padding: 20px;
+  color: rgb(4, 49, 49);
+}
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}

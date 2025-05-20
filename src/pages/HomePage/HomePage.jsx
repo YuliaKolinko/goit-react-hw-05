@@ -2,6 +2,7 @@ import styles from "./HomePage.module.css";
 import MovieList from "../../components/MovieList/MovieList";
 import { getMoviesList } from "../../MoviesApi";
 import { useEffect, useState } from "react";
+import { BeatLoader } from "react-spinners";
 
 export default function HomePage() {
   const [movies, setMovies] = useState([]);
@@ -26,7 +27,11 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <h2 className={styles.description}>Top trending movies</h2>
-      {loading && <p className={styles.loading}>Loading...</p>}
+      {loading && (
+        <div className={styles.loaderWrapper}>
+          <BeatLoader color="#043131" />
+        </div>
+      )}
       {error && (
         <p className={styles.error}>
           Something went wrong, please try again later.

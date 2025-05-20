@@ -2,6 +2,7 @@ import styles from "./MovieReviews.module.css";
 import { getMovieReviews } from "../../MoviesApi";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { BeatLoader } from "react-spinners";
 
 export default function MovieReviews() {
   const [reviews, setReviews] = useState([]);
@@ -19,7 +20,11 @@ export default function MovieReviews() {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Reviews</h2>
-      {loading && <p className={styles.loading}>Loading...</p>}
+      {loading && (
+        <div className={styles.loaderWrapper}>
+          <BeatLoader color="#043131" />
+        </div>
+      )}
       {error && (
         <p className={styles.error}>Something went wrong: {error.message}</p>
       )}
